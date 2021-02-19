@@ -6,7 +6,7 @@ module.exports = {
             /* retornamos los datos mientras coinsidan */
             return producto.id === Number(req.params.id) && producto.category === req.params.category
         })
-        res.render('productoDetalle', {
+        res.render('detalleProducto', {
             title: 'Detalle de producto',
             producto
         })
